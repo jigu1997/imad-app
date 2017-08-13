@@ -42,7 +42,7 @@ app.get('/ui/homebg.jpg', function (req, res) {
 });
 
 app.get('/ui/frames.gtml', function(req , res){
-    res.sen File(path.join(_dirname,'ui','frames.html'));
+    res.sendFile(path.join(_dirname,'ui','frames.html'));
     
 });
 
