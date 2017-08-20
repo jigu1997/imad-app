@@ -20,8 +20,25 @@ var articles : {
             as CSS Files.
             </p>`
 },
-  var article2 : {},
-  var article3 = {}
+  var article2 : {
+    title : 'Article-2 | About',
+    heading : 'Article-2',
+    date : 'September 12,2017',
+    content :` <p>
+        This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
+        as CSS Files.---Article2..
+        </p>`
+            
+  },
+  var article3 : {
+    title : 'Article-3 | About',
+    heading : 'Article-3',
+    date : 'October 11,2017',
+    content :` <p>
+        This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
+        as CSS Files.---Article3 content is displayed in this paragraph..
+        </p>`
+  }
   
 };
 
