@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var articles = {
     
-   article1 : {
+   'article1' : {
     title : 'Article-1 | About',
     heading : 'Article-1',
     date : 'August 11,2017',
@@ -20,7 +20,7 @@ var articles = {
             as CSS Files.
             </p>`
 },
-   article2 : {
+   'article2' : {
     title : 'Article-2 | About',
     heading : 'Article-2',
     date : 'September 12,2017',
@@ -30,7 +30,7 @@ var articles = {
         </p>`
             
   },
-   article3 : {
+   'article3' : {
     title : 'Article-3 | About',
     heading : 'Article-3',
     date : 'October 11,2017',
@@ -100,17 +100,14 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article1', function (req, res) {
-  res.send(createtemplate(article1));
+app.get('/:articlename', function (req, res) {
+  
+  var articlename = req.params.articlename;
+  res.send(createtemplate(articles(articlename)));
 });
 
-app.get('/article2', function (req, res){
-   res.sendFile(path.join(__dirname, 'ui', 'article2.html'));
-});
 
-app.get('/article3', function (req, res){
-   res.sendFile(path.join(__dirname, 'ui', 'article3.html'));
-});
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
