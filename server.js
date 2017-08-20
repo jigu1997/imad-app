@@ -39,7 +39,7 @@ var articles = {
     heading : 'Article-3',
     date : 'October 11,2017',
     link : 'article1',
-    image : 'home',
+    image : 'theme',
     content :` <p>
         This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
         as CSS Files.---Article3 content is displayed in this paragraph..
