@@ -12,6 +12,7 @@ var articles = {
     heading : 'Article-1',
     date : 'August 11,2017',
     link : 'article2',
+    image : 'rameswaram',
     content :` <p>
             This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
             as CSS Files.
@@ -26,6 +27,7 @@ var articles = {
     heading : 'Article-2',
     date : 'September 12,2017',
     link : 'article3',
+    image : 'theme',
     content :` <p>
         This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
         as CSS Files.---Article2..
@@ -37,6 +39,7 @@ var articles = {
     heading : 'Article-3',
     date : 'October 11,2017',
     link : 'article1',
+    image : 'home',
     content :` <p>
         This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
         as CSS Files.---Article3 content is displayed in this paragraph..
@@ -53,6 +56,7 @@ function createtemplate(data){
     var date = data.date;
     var content = data.content;
     var link = data.link
+    var image = data.image
     
     
     var htmltemplate =
@@ -81,7 +85,7 @@ function createtemplate(data){
     <hr/>
     
     <div>
-    <img src="ui/rameswaram.jpg" width="100%" height="50%">
+    <img src="ui/${image}.jpg" width="100%" height="50%">
     </div>
     
     <div>
@@ -125,6 +129,11 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/ui/rameswaram.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'rameswaram.jpg'));
 });
+
+app.get('/ui/theme.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'theme.jpg'));
+});
+
 
 
 
