@@ -5,7 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var article1 = {
+var articles : {
+    
+  var article1 : {
     title : 'Article-1 | About',
     heading : 'Article-1',
     date : 'August 11,2017',
@@ -17,7 +19,12 @@ var article1 = {
             This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
             as CSS Files.
             </p>`
+},
+  var article2 : {},
+  var article3 = {}
+  
 };
+
 
 function createtemplate(data){
     
