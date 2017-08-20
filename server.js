@@ -70,7 +70,7 @@ function createtemplate(data){
     
     <div>
     <a href="/">Home Page</a><br/>
-    <a href="/${link}">${heading}</a>
+    <a href="/${link}">${link}</a>
     </div>
     <hr/>
     <h3>${heading}</h3>
