@@ -5,10 +5,10 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var content{
-    title = 'Article-1 | About';
-    heading = 'Article-1';
-    date = 'August 11,2017';
+var content = {
+    title : 'Article-1 | About',
+    heading : 'Article-1',
+    date : 'August 11,2017',
 };
 
 
