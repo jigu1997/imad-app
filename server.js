@@ -25,7 +25,7 @@ var articles = {
     title : 'Article-2 | About',
     heading : 'Article-2',
     date : 'September 12,2017',
-    link : article3,
+    link : 'article3',
     content :` <p>
         This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
         as CSS Files.---Article2..
@@ -36,7 +36,7 @@ var articles = {
     title : 'Article-3 | About',
     heading : 'Article-3',
     date : 'October 11,2017',
-    link : article1,
+    link : 'article1',
     content :` <p>
         This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
         as CSS Files.---Article3 content is displayed in this paragraph..
