@@ -9,7 +9,7 @@ var content{
     title = 'Article-1 | About';
     heading = 'Article-1';
     date = 'August 11,2017';
-}
+};
 
 
 
