@@ -44,7 +44,19 @@ var articles = {
         This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
         as CSS Files.---Article3 content is displayed in this paragraph..
         </p>`
+  },
+  'article4' : {
+    title : 'Article-3 | About',
+    heading : 'Article-3',
+    date : 'October 11,2017',
+    link : 'article1',
+    image : 'home',
+    content :` <p>
+        This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
+        as CSS Files.---Article3 content is displayed in this paragraph..
+        </p>`
   }
+  
   
 };
 
