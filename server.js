@@ -187,6 +187,10 @@ app.get('/ui/favicon-96x96.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'favicon-96x96.png'));
 });
 
+app.get('/ui/favicon-16x16.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'favicon-16x16.png'));
+});
+
 
 
 
