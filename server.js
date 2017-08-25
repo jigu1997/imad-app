@@ -171,6 +171,22 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
+app.get('/ui/favicon-32x32.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'favicon-32x32.png'));
+});
+
+app.get('/ui/manifest.json', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'manifest.json'));
+});
+
+app.get('/ui/ms-icon-144x144.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'ms-icon-144x144.png'));
+});
+
+app.get('/ui/favicon-96x96.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'favicon-96x96.png'));
+});
+
 
 
 
