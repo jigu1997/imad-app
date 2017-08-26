@@ -118,9 +118,9 @@ function createtemplate(data){
 
 
 
-/*app.get('/', function (req, res) {
+app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});*/
+});
 
 app.get('/:articlesparameter', function (req, res) {
   
@@ -129,7 +129,7 @@ app.get('/:articlesparameter', function (req, res) {
 });
 
 var counter = 0;
-app.get('/', function (req, res) {
+app.get('/h', function (req, res) {
   res.send(counter);
 });
 
