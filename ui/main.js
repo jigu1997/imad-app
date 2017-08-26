@@ -9,7 +9,7 @@ element.innerHTML = 'new value';
 
 var margin = 0;
 
-var img = document.getElementById("madiimg");
+var img = document.getElementById("profileimage");
 function moveright(){
   margin = margin + 5;
   img.style.marginLeft = margin + "px";
