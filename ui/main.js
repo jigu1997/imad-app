@@ -27,3 +27,14 @@ button.onclick = function(){
     request.open("GET","http://jigu1997.imad.hasura-app.io/counter",true);
     request.send(null);
 };
+
+//Submit Name
+var nameinput = document.getElementById("name");
+var namevalue = nameinput.value;
+var submit = document.getElementById("Submit");
+
+submit.onclick = function(){
+    
+};
+
+
