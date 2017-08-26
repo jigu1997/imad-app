@@ -1,10 +1,12 @@
 console.log('Loaded!');
 
 //change the text
+
 var element = document.getElementById("maincontent");
 element.innerHTML = 'new value';
 
 //move the image
+
 var img1 = document.getElementById("img");
 var marginLeft = 0;
 function moveright(){
@@ -12,6 +14,6 @@ function moveright(){
     img1.style.marginLeft = marginLeft + "px";
 }
 
-img1.onclick = function () {
+madiimg.onclick = function () {
     var interval = setInterval(moveright,100);
 };
