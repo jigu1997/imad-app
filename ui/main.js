@@ -36,8 +36,22 @@ var submit = document.getElementById("Submit");
 submit.onclick = function(){
     
     //make request to the server and send names
+    var request = new XMLHttpRequest();
     
     //capture the list of names 
+    request.onreadystatechange = function(){
+      
+     if(request.readyState == XMLHttpRequest.DONE){
+         
+         if(request.status == 200){
+             
+             
+             
+         }
+         
+     } 
+        
+    };
     var names = ['name1','name2','name3','name4'];
     var list = '';
     for(var i=0;i<names.length;i++){
@@ -45,6 +59,9 @@ submit.onclick = function(){
     }
     var ul = document.getElementById("namelist");
     ul.innerHTML = list;
+    
+    request.open("GET","http://jigu1997.imad.hasura-app.io/submit-name?="+name,true);
+    request.send(null);
     
 };
 
