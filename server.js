@@ -121,11 +121,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/:articlesparameter', function (req, res) {
+/*app.get('/:articlesparameter', function (req, res) {
   
   var articlename = req.params.articlesparameter;
   res.send(createtemplate(articles[articlename]));
-});
+});*/
 
 var counter = 0;
 app.get('/counter', function (req, res) {
