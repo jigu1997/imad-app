@@ -1,20 +1,3 @@
-console.log('Loaded!');
+//Button Counter Program
 
-//change the text
-
-var element = document.getElementById("maincontent");
-element.innerHTML = 'new value';
-
-//move the image
-
-var margin = 0;
-
-var img = document.getElementById("profileimage");
-function moveright(){
-  margin = margin + 5;
-  img.style.marginLeft = margin + "px";
-}
-
-img.onclick = function(){
-    var interval = setInterval(moveright,50);
-};
+var button = document.getElementById("buttoncounter");
