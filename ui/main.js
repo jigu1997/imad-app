@@ -34,9 +34,6 @@ var submit = document.getElementById("Submit");
 
 submit.onclick = function(){
     
-    var nameinput = document.getElementById("name");
-    var namevalue = nameinput.value;
-    
     //make request to the server and send names
     var request = new XMLHttpRequest();
     
@@ -63,6 +60,8 @@ submit.onclick = function(){
         
     };
   
+    var nameinput = document.getElementById("name");
+    var namevalue = nameinput.value;
     request.open("GET","http://jigu1997.imad.hasura-app.io/submit-name?name="+namevalue,true);
     request.send(null);
     
