@@ -129,8 +129,8 @@ app.get('/:articlesparameter', function (req, res) {
 });
 
 var counter = 0;
-app.get('/h', function (req, res) {
-  res.send(counter);
+app.get('/counter', function (req, res) {
+  res.send(counter.toString());
 });
 
 
