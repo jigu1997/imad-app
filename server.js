@@ -122,7 +122,7 @@ var names =[];
 app.get('/submit-name', function(req, res){
  
  //get the name   
- var name = req.query.names;
+ var name = req.query.name;
  
  names.push(name);
  
