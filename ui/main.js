@@ -1,7 +1,7 @@
 console.log('Loaded!');
 
 //change the text
-var element = document.getElementById("main");
+var element = document.getElementById("maincontent");
 element.innerHTML = 'new value';
 
 //move the image
