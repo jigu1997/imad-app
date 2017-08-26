@@ -122,7 +122,7 @@ var names =[];
 app.get('/submit-name', function(req, res){
  
  //get the name   
- var name = req.query.name;
+ var name = req.query.names;
  
  names.push(name);
  
@@ -131,11 +131,11 @@ app.get('/submit-name', function(req, res){
  
 });
 
-/*app.get('/:articlesparameter', function (req, res) {
+app.get('/:articlesparameter', function (req, res) {
   
   var articlename = req.params.articlesparameter;
   res.send(createtemplate(articles[articlename]));
-});*/
+});
 
 var counter = 0;
 app.get('/counter', function (req, res) {
