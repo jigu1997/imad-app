@@ -1,3 +1,3 @@
 //Button Counter Program
 
-var button = document.getElementById("buttoncounter");
+var button = document.getElementById("counterbutton");
