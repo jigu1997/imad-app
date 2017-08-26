@@ -4,7 +4,7 @@ var button = document.getElementById("counterbutton");
 
 button.onclick = function(){
     
-    //Make Request
+    //Create Request
     var request = new XMLHttpRequest();
     
     //Capture Response and Render
@@ -24,4 +24,7 @@ button.onclick = function(){
         
     };
     
+    //Make Request
+    request.open("GET","http://jigu1997.imad.hasura-app.io/counter",true);
+    request.send(null);
 };
