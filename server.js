@@ -168,7 +168,7 @@ app.get('/articles/:articleName', function (req, res) {
           }
       }
   });
-  res.send(createtemplate(articleData));
+  
 });
 
 var counter = 0;
