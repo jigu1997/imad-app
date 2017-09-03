@@ -96,7 +96,7 @@ function createtemplate(data){
     
     <div>
     <a href="/">Home Page</a><br/>
-    <a href="/${link}">${link}</a>
+    <a href="/articles/${link}">${link}</a>
     </div>
     <hr/>
     <h3>${heading}</h3>
@@ -107,7 +107,7 @@ function createtemplate(data){
     <hr/>
     
     <div>
-    <img src="ui/${image}.jpg" width="100%" height="50%">
+    <img src="ui/${image.toString()}.jpg" width="100%" height="50%">
     </div>
     
     <div>
