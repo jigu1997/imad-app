@@ -102,7 +102,7 @@ function createtemplate(data){
     <h3>${heading}</h3>
     
     <div>
-    ${date}.toDateString();
+    ${date.toDateString()}
     </div>
     <hr/>
     
