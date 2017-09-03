@@ -14,62 +14,6 @@ var config = {
     password : process.env.DB_PASSWORD
 }
 
-var articles = {
-    
-   'article1' : {
-    title : 'Article-1 | About',
-    heading : 'Article-1',
-    date : 'August 11,2017',
-    link : 'article2',
-    image : 'rameswaram',
-    content :` <p>
-            This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
-            as CSS Files.
-            </p>
-            <p>
-            This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
-            as CSS Files.
-            </p>`
-},
-   'article2' : {
-    title : 'Article-2 | About',
-    heading : 'Article-2',
-    date : 'September 12,2017',
-    link : 'article3',
-    image : 'theme',
-    content :` <p>
-        This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
-        as CSS Files.---Article2..
-        </p>`
-            
-  },
-   'article3' : {
-    title : 'Article-3 | About',
-    heading : 'Article-3',
-    date : 'October 11,2017',
-    link : 'article1',
-    image : 'home',
-    content :` <p>
-        This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
-        as CSS Files.---Article3 content is displayed in this paragraph..
-        </p>`
-  },
-  'article4' : {
-    title : 'Article-3 | About',
-    heading : 'Article-3',
-    date : 'October 11,2017',
-    link : 'article1',
-    image : 'home',
-    content :` <p>
-        This is just a sample content to be displayed on the browser to understand how the browser renders HTML as well
-        as CSS Files.---Article3 content is displayed in this paragraph..
-        </p>`
-  }
-  
-  
-};
-
-
 function createtemplate(data){
     
     var title = data.title;
