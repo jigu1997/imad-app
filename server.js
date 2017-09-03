@@ -186,7 +186,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/ui/he.jpg', function (req, res) {
+app.get('/articles/ui/he.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'he.jpg'));
 });
 
@@ -194,7 +194,7 @@ app.get('/articles/ui/rameswaram.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'rameswaram.jpg'));
 });
 
-app.get('/ui/theme.jpg', function (req, res) {
+app.get('/articles/ui/theme.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'theme.jpg'));
 });
 
