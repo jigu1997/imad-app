@@ -72,13 +72,13 @@ function hash(input,salt){
   //create hash
   var hashed = crypto.pbkdf2Sync(input,salt,10000,512,'sha512');
   //return hash
-  return hashed;
+  return hashed.toString('hex');
     
 }
 
 app.get('/hash/:input',function(req,res){
     var hashedString = hash(req.params.input,'this is a random salt');
-    res.send(hashedString.toString);
+    res.send(hashedString);
 });
 
 var pool = new Pool(config);
