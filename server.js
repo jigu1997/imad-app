@@ -70,7 +70,7 @@ function createtemplate(data){
 
 function hash(input,salt){
   //create hash
-  var hashed = crypto.pbkdf2Sync(input,salt,10000,512,'sha512');
+  var hashed = crypto.pbkdf2Sync(input,salt,100000,512,'sha512');
   //return hash
   return hashed.toString('hex');
     
