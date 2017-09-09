@@ -78,7 +78,7 @@ function hash(input,salt){
 
 app.get('/hash/:input',function(req,res){
     var hashedString = hash(req.params.input,'this is a random salt');
-    res.send(hashedString);
+    res.send(hashedString.toString);
 });
 
 var pool = new Pool(config);
