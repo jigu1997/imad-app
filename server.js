@@ -168,9 +168,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var names =[];
-app.get('/getarticles', function(req, res){
 
+app.get('/getarticles', function(req, res){
+ var names =[];
  pool.query('SELECT heading FROM article',function(err,result){
      if(err){
          res.status(500).send(err.toString());
