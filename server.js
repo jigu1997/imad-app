@@ -11,7 +11,7 @@ app.use(morgan('combined'));
 app.use(bodyParser.json());
 app.use(session({
     secret : 'SomeRandomSecretValue',
-    cookie : {maxAge : 1000 * 60 *1}
+    cookie : {maxAge : 1000 * 60 *5}
 }));
 
 var config = {
@@ -143,6 +143,11 @@ app.get('/check-login',function(req,res){
     }else{
         res.send("Session Expired.Login again");
     }
+});
+
+app.get('/logout',function(req,res){
+   delete req.session.auth;
+   alert("Successfully logged out");
 });
 
 var pool = new Pool(config);
