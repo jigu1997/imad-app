@@ -118,7 +118,7 @@ app.post('/login',function(req, res){
               if(hashedPassword==dbString){
                   res.send('Welcome User : '+username);
               }else{
-                   res.status(403).send("Username / Password is Invalid");
+                   res.status(403).send("Password is Invalid");
               }
           }
           
