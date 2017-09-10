@@ -169,12 +169,16 @@ app.get('/', function (req, res) {
 });
 
 var names =[];
-app.get('/submit-name', function(req, res){
+app.get('/getarticles', function(req, res){
+
+ pool.query('SELECT heading FROM article',function(err,result){
+     if(err){
+         res.status(500).send(err.toString());
+     }else{
+        names.push(result.rows);
+     }
+ });
  
- //get the name   
- var name = req.query.name;
- 
- names.push(name);
  
  //JSON
  res.send(JSON.stringify(names));
