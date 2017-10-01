@@ -114,7 +114,7 @@ app.post('/login',function(req, res){
           res.status(500).send(err.toString());
       }else{
           if(result.rows.length===0){
-              res.status(403).send("Username / Password is Invalid");
+              res.status(403).send(JSON.Stringify("Username / Password is Invalid"));
           }
           else{
               var dbString = result.rows[0].password;
@@ -126,7 +126,7 @@ app.post('/login',function(req, res){
                   req.session.auth = {userId:result.rows[0].id};
                   //set a cookie from session id
                   
-                  res.send('Welcome User : '+username);
+                  res.send(JSON.Stringify('Welcome User : '+username));
               }else{
                    res.status(403).send("Password is Invalid");
               }
