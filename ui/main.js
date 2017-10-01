@@ -29,7 +29,7 @@ submit.onclick = function(){
   
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
-    request.open("POST","http://jigu1997.imad.hasura-app.io/login",true);
+    request.open("POST","http://jigu1997.imad.hasura-app.io/create-user",true);
     request.setRequestHeader('Content-Type','application/json');
     request.send(JSON.stringify({username: username,password: password}));
     
